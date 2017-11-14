@@ -1,0 +1,150 @@
+@charset "UTF-8";
+*{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+body{
+  font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,sans-serif!important;
+  background-color: #e1e1e1;
+  font-size: 14px;
+  color: #333;
+}
+.header{
+  margin-bottom: 0;
+  z-index: 9;
+  width: 100%;
+  position: relative;
+  background: #444;
+  font-size: 13px;
+  height: 50px;
+  &>div{
+    background: 0 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    width: 83%;
+    margin: auto;
+    padding: 5px;
+  }
+}
+.header_left{
+  float: left;
+  &>img{
+    width: 120px;
+    padding: 3px 20px;
+    height: 28px;
+    float: left;
+  }
+  &>div{
+    position: relative;
+    float: left;
+    margin: 6px 0 0;
+    &>input{
+      background: url("https://cnodejs.org/public/images/search.e53b380a.hashed.png") 4px 4px no-repeat #888;
+      padding: 3px 5px 3px 22px;
+      color: #666;
+      border: 0;
+      margin-top: 2px;
+      transition: all .5s;
+      margin-bottom: 0;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      outline: none;
+      width: 206px;
+      height:20px;
+    }
+    }
+  }
+.header_right{
+  float: right;
+  &>li:hover{
+    color: white;
+  }
+  &>li{
+    float: left;
+    line-height: 20px;
+    text-shadow: none;
+    color: #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+}
+.view{
+  width: 90%;
+  max-width: 1400px;
+  min-width: 960px;
+  margin: 15px auto;
+  min-height: 400px;
+  position: relative;
+}
+.footer{
+  clear: both;
+  background: #fff;
+  &>div{
+    width: 90%;
+    max-width: 1400px;
+    min-width: 960px;
+    margin: 0 auto;
+    color: #e2e2e2;
+    padding: 20px 0;
+    font-size: 13px;
+    line-height: 2em;
+    a{
+      color: #666;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &>div:nth-of-type(2){
+      color: #ababab;
+      p{
+        font-size: 14px;
+        word-break: break-all;
+        line-height: 20px;
+        vertical-align: bottom;
+        margin: 0 0 10px;
+        img{
+          height: auto;
+          vertical-align: middle;
+          width: 92px;
+        }
+      }
+      .lastA{
+        color: #08c;
+        text-decoration: none;
+      }
+      .lastA:hover{
+        color: #005580;
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+.headerPin{
+  padding: 10px;
+  background-color: #f6f6f6;
+  border-radius: 3px 3px 0 0;
+}
+.aCom{
+  text-decoration: none;
+}
+.aCom:hover{
+  text-decoration: underline;
+}
+@import "kindscss/home";
+@import "kindscss/homelist/all";
+@import "kindscss/about";
+@import "kindscss/api";
+@import "kindscss/login";
+@import "kindscss/register";
+@import "kindscss/newuser";
+@import "kindscss/strictPag";
+
+
+
